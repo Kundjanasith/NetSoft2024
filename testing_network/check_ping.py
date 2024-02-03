@@ -16,6 +16,8 @@ def check_ping(hostname):
 
 file_o = open('check_ping.csv','w')
 file_o.write('IP,PING\n')
-for ip in IPs:
+# for ip in IPs:
+for i in range(256):
+    ip = '10.10.100.%d'%i
     file_o.write(str(ip)+','+str(check_ping(ip))+'\n')
 file_o.close()
