@@ -46,5 +46,5 @@ file_o.write('IP,LATENCY\n')
 for ip in dfx['IP']:
     print(ip)
     average_latency = test_latency(ip)
-    file_o.write(str(ip)+','+average_latency+'\n')
+    file_o.write(str(ip)+','+str(average_latency)+'\n')
 file_o.close()
