@@ -18,6 +18,6 @@ ssh 10.10.100.115 date
 for i in 13 14 15 34 35 36 65 66 68 113 114 115
 do 
     scp piknode-setup-reqs.sh 10.10.100.$i:/home/ubuntu/
-    ssh 10.10.100.$i ./pik-node-setup-reqs.sh install_py /home/ubuntu/NetSoft2024
+    ssh 10.10.100.$i `bash /home/ubuntu/pik-node-setup-reqs.sh install_py /home/ubuntu/NetSoft2024`
 done
 
